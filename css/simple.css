@@ -1,0 +1,350 @@
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 5em;	
+	font-family: arial,helvetica;
+}
+.section{
+	text-align:center;
+}
+ul li{
+	display:inline-block;
+	padding: 20px;
+	color: #ccc;
+}
+ul li.active{
+   color: #000;
+}
+ul{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	background: #fff;
+	z-index: 9999;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+	
+.section {
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:black;
+    /*background-size: 90% auto*/;
+
+    /* make image expand the whole background area */
+    /*background-size:cover;*/
+}
+
+a:link {
+    text-decoration:none;
+}
+
+a:visited {
+    text-decoration:none;
+}
+
+a, img {
+    border:none;
+}
+
+#section0 {
+    background-image:url(../images/home_1.jpg);
+}
+
+#section1 {
+    background-image:url(../images/home_2.jpg);
+}
+
+#section2 {
+    background-image:url(../images/home_3.jpg);
+}
+
+#section3 {
+    background-image:url(../images/home_4.jpg);
+}
+
+#contactus_0 {
+    background-image:url(../images/contactus_0.png);
+}
+
+#contactus_1 {
+    background-image:url(../images/contactus_1.png);
+}
+
+#aboutus_0 {
+    background-image:url(../images/aboutus_0.jpg);
+}
+
+#aboutus_1 {
+    background-image:url(../images/aboutus_1.jpg);
+}
+
+#aboutus_2 {
+    background-image:url(../images/aboutus_2.jpg);
+}
+
+#aboutus_3 {
+    background-image:url(../images/aboutus_3.jpg);
+}
+
+#wecando_0 {
+    background-image:url(../images/wecando_0.jpg);
+}
+
+#wecando_1 {
+    background-image:url(../images/wecando_1.jpg);
+}
+
+#department_1 {
+    background-image:url(../images/department_1.jpg);
+}
+
+#under_construction_0 {
+    background-image:url(../images/under_construction.jpg);
+}
+
+#header {
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 10px;
+    text-align: center;
+    position:fixed; /* keep header fixed */
+    left:0px;
+    top:0px;
+    font-size: medium; /* set header font size fixed */
+}
+#header_logo {
+    position:fixed; 
+    top:0px; 
+    left:0px;
+    z-index:10000;
+}
+
+#body {
+    position: absolute;
+    width: 100%;
+    top:150px;
+    /*left:160px;*/
+    margin-left:160px;
+    margin-right:160px;
+    text-align:left;
+}
+.navigation {
+    width: 100px;
+    float: left;
+}
+
+#photo_wall {
+    /*width:425px; seems no need to set width ?*/
+    float: right;
+    margin-right:300px;
+}
+
+#photo_wall img {
+    width: 139px;
+}
+
+#description {
+    padding-left: 150px;
+    padding-right: 300px;
+}
+.title_1, .title_2 {
+    color: white;
+    padding: 5px 0;
+}
+.title_1 {
+    font-size:xx-large;
+    padding: 10px 0;
+}
+.title_0 {
+ padding:0;
+ color:gray;
+ font-size:xx-large;
+}
+#header a {
+    padding: 15px ;
+    color: gray;
+}
+
+a:link {
+    text-decoration:none;
+}
+a:active {
+    color: white;
+}
+
+body {
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    color: gray;
+}
+
+
+a
+{
+    background-size:contain;
+/*    width: 100px;
+    height: 100px;*/
+}
+
+.logo_banner {
+    position: absolute; 
+    width:100%;
+    text-align: center;
+    bottom: 100px;
+}
+#department_1 .logo_banner
+{
+    top: 200px;
+}
+
+#aboutus_1 .logo_banner
+{
+    bottom: 170px;
+}
+
+.logo_banner .logo{
+    margin: 0 5%;
+    padding: 90px 50px;
+    background-repeat: no-repeat;
+}
+.navigation .logo {
+    display:block; /* make logoes placed in new lines*/
+    padding: 90px 50px;
+    background-image:url(../images/logo_0_gray.png);
+}
+
+.navigation .small_logo {
+    display:block; /* make logoes placed in new lines*/
+    padding: 33.5px;
+    position:relative;
+    left: 16.5px; /* (100px - 67px) / 2 = 16.5 px */
+}
+
+.navigation #small_logo_0 {
+    background-image:url(../images/small_logo_0_white.png);
+}
+
+.navigation #small_logo_1 {
+    background-image:url(../images/small_logo_1_white.png);
+}
+
+.navigation #small_logo_2 {
+    background-image:url(../images/small_logo_2_white.png);
+}
+.navigation #small_logo_3 {
+    background-image:url(../images/small_logo_3_white.png);
+}
+.navigation #small_logo_4 {
+    background-image:url(../images/small_logo_4_white.png);
+}
+
+.navigation #small_logo_0:hover {
+    background-image:url(../images/small_logo_0_red.png);
+}
+
+.navigation #small_logo_1:hover {
+    background-image:url(../images/small_logo_1_red.png);
+}
+
+.navigation #small_logo_2:hover {
+    background-image:url(../images/small_logo_2_red.png);
+}
+.navigation #small_logo_3:hover {
+    background-image:url(../images/small_logo_3_red.png);
+}
+.navigation #small_logo_4:hover {
+    background-image:url(../images/small_logo_4_red.png);
+}
+
+.arrow_down {
+    padding: 10px 20px;
+    display:block; /* make logoes placed in new lines*/
+    background-image:url(../images/arrow_down_white.png);
+    position:relative;
+    left: 30px;  /* (100px - 20*2px) / 2  = 30px*/
+}
+.arrow_down:hover {
+    background-image:url(../images/arrow_down_red.png);
+}
+
+.navigation a {
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+#logo_0
+{
+    background-image:url(../images/logo_0_gray.png);
+}
+
+a#logo_0:hover {
+    background-image:url(../images/logo_0_red.png);
+}
+
+#logo_1
+{
+    background-image:url(../images/logo_1_gray.png);
+}
+
+a#logo_1:hover {
+    background-image:url(../images/logo_1_red.png);
+}
+
+#logo_2
+{
+    background-image:url(../images/logo_2_gray.png);
+}
+
+a#logo_2:hover {
+    background-image:url(../images/logo_2_red.png);
+}
+
+#logo_3
+{
+    background-image:url(../images/logo_3_gray.png);
+}
+
+a#logo_3:hover {
+    background-image:url(../images/logo_3_red.png);
+}
+
+#logo_4
+{
+    background-image:url(../images/logo_4_gray.png);
+}
+
+a#logo_4:hover {
+    background-image:url(../images/logo_4_red.png);
+}
+
+.highlight {
+    color: white;
+}
+
+#photowall_header {
+    margin:10px;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    text-align: left;
+    position:fixed; /* keep header fixed */
+    left:0px;
+    top:0px;
+    font-size: medium; /* set header font size fixed */
+}
+
+#pageinfo {
+    position: fixed;
+    right: 20px; 
+}
+
+.photo_slides img {
+    width: 100%;
+}
