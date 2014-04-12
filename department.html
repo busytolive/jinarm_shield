@@ -22,6 +22,8 @@
 		
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/util.js"></script>
 	
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript">
@@ -64,19 +66,19 @@ css3: true
             <div id="photo_wall">
                 <div id="dep_0_photo">
                     <div>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
+                        <a href="photowall.html?dep=0&photoId=0#firstPage/0" target="_blank"><img src="images/photo_wall/1.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=1#firstPage/1" target="_blank"><img src="images/photo_wall/2.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=2#firstPage/2" target="_blank"><img src="images/photo_wall/3.jpg"/></a>
                     </div>
                     <div>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
+                        <a href="photowall.html?dep=0&photoId=3#firstPage/3" target="_blank"><img src="images/photo_wall/4.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=4#firstPage/4" target="_blank"><img src="images/photo_wall/5.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=5#firstPage/5" target="_blank"><img src="images/photo_wall/6.jpg"/></a>
                     </div>
                     <div>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
-                        <a href="photowall.html" target="_blank"><img src="images/photo_1.png"/></a>
+                        <a href="photowall.html?dep=0&photoId=6#firstPage/6" target="_blank"><img src="images/photo_wall/7.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=7#firstPage/7" target="_blank"><img src="images/photo_wall/8.jpg"/></a>
+                        <a href="photowall.html?dep=0&photoId=8#firstPage/8" target="_blank"><img src="images/photo_wall/9.jpg"/></a>
                     </div>
                 </div>
                 <div id="dep_1_photo" style="display:none">
@@ -202,9 +204,7 @@ css3: true
         </div>
     </div>
     <script type="text/javascript">
-        var parArr = window.location.href.split("?")[1].split("=");
-        var current_dep_id = parArr[1];
-        //alert(current_dep_id);
+        var current_dep_id = getParamByName("dep");
         update_department(parseInt(current_dep_id));
     </script>
 </body>

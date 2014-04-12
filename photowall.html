@@ -22,15 +22,20 @@
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 	
+    <script src="js/util.js"></script>
+    <script type="text/javascript" src="js/photo_wall.js"></script>
+
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/photo_wall.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
 fixedElements: '#photowall_header',
-paddingTop: '15px',
-css3:'true'
+paddingTop: '50px',
+css3:'true',
+anchors: ['firstPage'],
+loopHorizontal: false,
+afterSlideLoad: switch_photo
 			});
 		});
 	</script>
@@ -38,18 +43,29 @@ css3:'true'
 </head>
 <body>
     <div id="photowall_header">
-        <span id="photo_desc">
+        <span id="photo_desc" style="float:left;width:90%">
             <span class="highlight">E计划项目 | </span> 此处省略若干字...
         </span>
-        <span class="highlight" id="pageinfo">1/9</span>
+        <span class="highlight" id="pageinfo">1 / 9</span>
     </div>
 
     <div class="section active photo_slides">
-        <div class="slide"><img src="images/photo_slide_0.png"/></div>
-        <div class="slide"><img src="images/photo_slide_0.png"/></div>
-        <div class="slide"><img src="images/photo_slide_0.png"/></div>
-        <div class="slide"><img src="images/photo_slide_0.png"/></div>
+        <div class="slide"><img src="images/photo_wall/1.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/2.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/3.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/4.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/5.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/6.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/7.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/8.jpg"/></div>
+        <div class="slide"><img src="images/photo_wall/9.jpg"/></div>
     </div>
+
+    <script type="text/javascript">
+        var dep_id = getParamByName("dep");
+        var photo_id = getParamByName("photoId");
+        update_photowall(dep_id, photo_id);
+    </script>
 
 </body>
 </html>
