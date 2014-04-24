@@ -42,7 +42,7 @@
         <a href="aboutus.html">关于我们</a>
         <a href="wecando.html">我们能做什么</a>
         <a href="library.html">JAS智库</a>
-        <a href="contactus.html">联系我们</a>
+        <a href="contactus.php">联系我们</a>
     </div>
 
 <div class="section active" id="contactus_0"></div>
