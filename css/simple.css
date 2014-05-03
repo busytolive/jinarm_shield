@@ -349,3 +349,41 @@ a#logo_4:hover {
 .photo_slides img {
     width: 100%;
 }
+
+#email {
+    position:absolute;
+    left: 230px; 
+    top: 320px;
+    text-align: left;
+}
+
+#email {
+    color: red;
+}
+
+#email span {
+    color: gray;
+    margin-left: 5px;
+}
+
+#email input {
+    margin: 5px;
+    width: 370px;
+}
+
+#email input#verify_code {
+    width: 70px;
+}
+
+#email textarea {
+    margin: 5px;
+    width: 370px;
+}
+
+#email input[type=image] {
+    color: gray;
+    width:100px;
+    height: 30px;
+    margin-left: 15px;
+}
+
